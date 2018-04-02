@@ -17,7 +17,7 @@ public:
 private:
     Polymonial* checkPoly(std::string);
     double checkDelay(std::string);
-public:
+private:            //Do testów można dać public 
     Polymonial *m_polyA=nullptr;
     Polymonial *m_polyB=nullptr;
     unsigned int m_dA=0;
