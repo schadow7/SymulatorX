@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     wektor2.push_back(2.8);    wektor2.push_back(4);
     Polymonial w2(wektor2);
     ObjectDiscrete ob1(&w1,&w2,10); ObjectDiscrete ob2;
-    //ob1.saveConfig("wentylator.txt");
+    ob1.saveConfig("wentylator.txt");
     ObjectSISO * wskSISO;
     try
     {
