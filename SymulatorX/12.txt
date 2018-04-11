@@ -1,0 +1,16 @@
+#This file is configuration of DiscreteObject named:   C:/Users/Piotr/Desktop/SymulatorX/12
+#For information how to create configuration file please check Help in SymulatorX
+#Type
+type: objectdiscrete
+#Polymonial A (first set of parameters)
+poly1A: -8
+#Polymonial B (first set of parameters)
+poly1B: 2
+#Polymonial A (second set of parameters)
+poly2A: -0.6
+#Polymonial B (second set of parameters)
+poly2B: 0.4
+#Delay 
+delay1: 10
+#Swap time
+swaptime: 2

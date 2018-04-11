@@ -1,0 +1,18 @@
+#This file is configuration of DiscreteObject named:   wentylator
+#For information how to create configuration file please check Help in SymulatorX
+#Type
+type: objectdiscrete
+#Polymonial A (first set of parameters)
+poly1A: -8
+#Polymonial B (first set of parameters)
+poly1B: 2
+#Delay (first set of parameters)
+delay1: 10 
+#Polymonial 2A (second set of parameters)
+poly2A: -0.6
+#Polymonial 2B (second set of parameters)
+poly2B: 0.4
+#Swaptime
+swaptime: 2.3
+#Variance
+variance: 0.5

@@ -1,0 +1,14 @@
+#include "obiektdyskretny.h"
+
+ObiektDyskretny::ObiektDyskretny(Wielomian*wA,Wielomian*wB,unsigned int T0)
+{
+    m_wielomianA=wA;
+    m_wielomianB=wB;
+    m_opoznienie=T0;
+    
+}
+
+ObiektDyskretny::~ObiektDyskretny()
+{
+
+}

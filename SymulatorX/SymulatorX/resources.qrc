@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/wall.png</file>
+        <file>images/regulator.png</file>
+        <file>images/object.png</file>
+    </qresource>
+</RCC>

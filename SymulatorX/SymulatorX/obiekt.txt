@@ -1,0 +1,10 @@
+#This file is configuration of DiscreteObject named:   obiekt
+#For information how to create configuration file please check Help in SymulatorX
+#Type
+type: objectdiscrete
+#Polymonial A (first set of parameters)
+poly1A: 1 2 11 1.2
+#Polymonial B (first set of parameters)
+poly1B: 2.8 4
+#Delay (first set of parameters)
+delay1: 10
