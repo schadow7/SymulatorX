@@ -3,7 +3,9 @@
 #include <vector>
 #include <deque>
 #include <string>
-
+/**
+ * @brief Klasa Wielomianu modelu ARX
+ */
 class Polymonial
 {
 public:

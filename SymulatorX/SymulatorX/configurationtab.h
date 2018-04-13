@@ -30,9 +30,13 @@ signals:
      */
     void clickedObject();
     /**
+     * @brief Sygnał informujący o kliknięciu przycisku Regulator
+     */
+    void clickedRegulator();
+    /**
      * @brief Sygnał informujący o kliknięciu przycisku Load
      */
-    void clickedLoad();
+        void clickedLoad();
     /**
      * @brief Sygnał informujący o kliknięciu przycisku Save
      */

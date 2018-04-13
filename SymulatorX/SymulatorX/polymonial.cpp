@@ -44,8 +44,8 @@ double Polymonial::compute(const std::deque<double> &z)
     }
 
     else throw std::runtime_error("Polymonial compute: vector sizes mismatch");
-    qDebug() <<"compute(const std::deque<double> &z) Suma="<< suma;
-    qDebug() << "m_coeffs:"<<m_coeffs;
+    //qDebug() <<"compute(const std::deque<double> &z) Suma="<< suma;
+    //qDebug() << "m_coeffs:"<<m_coeffs;
     return suma;
 
 }

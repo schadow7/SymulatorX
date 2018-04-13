@@ -1,5 +1,13 @@
 #include "chart.h"
 
+Chart::Chart(QCustomPlot *ptr, unsigned int graphNum)
+{
+    graphNumber=graphNum;
+    customPlot=ptr;
+    customPlot->addGraph();  // blue line
+    customPlot->graph(graphNumber)->setPen(QPen(QColor(40, 110, 255*graphNumber)));
+
+}
 Chart::Chart(unsigned int graphsNumber)
 {
     customPlot = new QCustomPlot();
@@ -16,10 +24,10 @@ Chart::Chart(unsigned int graphsNumber)
 void Chart::draw (double wartsc)
 {
     // add data to lines:
-    customPlot->graph(0)->addData(time, wartsc);
+    customPlot->graph(graphNumber)->addData(time, wartsc);
     //customPlot->graph(1)->addData(key, w);
     // rescale value (vertical) axis to fit the current data:
-    customPlot->graph(0)->rescaleValueAxis(false,true);
+    customPlot->graph(graphNumber)->rescaleValueAxis(false,true);
     //customPlot->graph(1)->rescaleValueAxis();
 
     // scroll x axis with 500 range
@@ -30,15 +38,9 @@ void Chart::draw (double wartsc)
 void Chart::draw (std::vector<double> wartsc)
 {
     // add data to lines:
-    for (int i=0; i<wartsc.size();i++)
-    {
-        customPlot->graph(i)->addData(time, wartsc[i]);
-        customPlot->graph(i)->rescaleValueAxis(false,true);
-    }
-    //customPlot->graph(1)->addData(key, w);
-    // rescale value (vertical) axis to fit the current data:
-    customPlot->graph(0)->rescaleValueAxis(false,true);
-    //customPlot->graph(1)->rescaleValueAxis();
+        customPlot->graph(graphNumber)->addData(time, wartsc[graphNumber]);
+        //customPlot->graph(graphNumber)->rescaleValueAxis(false,true);
+        customPlot->yAxis->rescale(true);
 
     // scroll x axis with 500 range
     customPlot->xAxis->setRange(time, 500, Qt::AlignRight);

@@ -33,7 +33,8 @@ public slots:
     /**
      * @brief Wyświetla informacje o konfiguracji wybranego celu (obiekcie, regulatorze)
      */
-    void showConfiguration();
+    void showObjectConfiguration();
+    void showRegulatorConfiguration();
     /**
      * @brief Wczytuje konfigurację wybranego celu (obiekt, regulator) o wybranej nazwie
      */
@@ -46,6 +47,15 @@ public slots:
     void start();
     void setTimerInterval(int);
     void setSetPoint(int);
+    void setGeneratorRectState(bool);
+    void setGeneratorRectParam(double,unsigned int,unsigned int);
+    void setGeneratorSinState(bool);
+    void setGeneratorSinParam(double,unsigned int);
+    void setGeneratorTriangState(bool);
+    void setGeneratorTriangParam(double,unsigned int);
+    void setGeneratorRandState(bool);
+    void setGeneratorRandParam(double);
+    void setRegulatorPParam(double);
 private:
     ControlLoop * m_loop;
     SimulationTab * m_simTab;

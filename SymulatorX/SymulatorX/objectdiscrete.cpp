@@ -355,6 +355,7 @@ double ObjectDiscrete::sim(double value)
     else e=0.0;
     double y=(m_poly1B->compute(m_u)+e)-m_poly1A->compute(m_y);
     notify({y,value});
+    //notify(y);
     update(m_y,y);
     m_time++;
     return y;

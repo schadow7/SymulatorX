@@ -20,7 +20,11 @@ HEADERS += \
     qcustomplot.h \
     regulator.h \
     generator.h \
-    regulatorpid.h
+    regulatorpid.h \
+    genrect.h \
+    gensin.h \
+    gentriang.h \
+    genrand.h
 
 SOURCES += \
     mainwindow.cpp \
@@ -36,7 +40,12 @@ SOURCES += \
     chart.cpp \
     qcustomplot.cpp \
     generator.cpp \
-    regulatorpid.cpp
+    regulatorpid.cpp \
+    regulator.cpp \
+    genrect.cpp \
+    gensin.cpp \
+    gentriang.cpp \
+    genrand.cpp
 
 
 RESOURCES += \

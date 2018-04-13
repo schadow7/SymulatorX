@@ -7,10 +7,12 @@
 class Chart :public Observer
 {
     QCustomPlot *customPlot;
+    unsigned int graphNumber;
     unsigned int time=0;
 public:
     /** graphsNumber- liczba przebiegów na wykresie.*/
-    Chart(unsigned int graphsNumber=1);
+    Chart(QCustomPlot *ptr,unsigned int graphNumber=0);
+    Chart(unsigned int graphNumber=0);
     virtual void update (double wartosc);
     virtual void update (std::vector<double> wartosc);
     void draw(double wartosc);

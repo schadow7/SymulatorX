@@ -9,6 +9,7 @@ ConfigurationTab::ConfigurationTab(QWidget *parent) : QWidget(parent)
     createLayout();
 
     connect(m_button_object,SIGNAL(clicked()),this,SIGNAL(clickedObject()));
+    connect(m_button_regulator,SIGNAL(clicked()),this,SIGNAL(clickedRegulator()));
     connect(m_button_load,SIGNAL(clicked()),this,SIGNAL(clickedLoad()));
     connect(m_button_save,SIGNAL(clicked()),this,SIGNAL(clickedSave()));
 }
